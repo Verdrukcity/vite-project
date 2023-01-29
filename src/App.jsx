@@ -1,13 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import LandingPage from './Components/LandingPage'
 
 const App = () => {
 
   return (
-    <div className="App">
-      
-    </div>
+    <React.Fragment>
+      <Routes>
+        <Route path='/' element={<LandingPage></LandingPage>}/>
+      </Routes>
+    </React.Fragment>
   )
 }
 
