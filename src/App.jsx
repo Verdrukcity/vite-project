@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import './App.css'
+import Home from './components/Home'
 import LandingPage from './Components/LandingPage'
 
 const App = () => {
@@ -9,6 +9,7 @@ const App = () => {
     <React.Fragment>
       <Routes>
         <Route path='/' element={<LandingPage></LandingPage>}/>
+        <Route path='/home' element={<Home></Home>}/>
       </Routes>
     </React.Fragment>
   )
